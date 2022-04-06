@@ -11,7 +11,10 @@ app.use(cors()); //nunca te olvides de poner esto, si es que vas a usar las api 
 app.use("/", indexRoute);
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  // res.send("Hello World!");
+  res.json({
+    message: "Hello World!",
+  }) 
 });
 
 export default app;
